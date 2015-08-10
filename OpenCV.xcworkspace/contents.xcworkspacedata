@@ -2,9 +2,41 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:VideoCaptureByMacCam/VideoCaptureByMacCam.xcodeproj">
+      location = "group:BackgroundSubtraction/BackgroundSubtraction.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:HelloCV/HelloCV.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:VideoCaptureByMacCam/VideoCaptureByMacCam.xcodeproj">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "ObjectDetection">
+      <FileRef
+         location = "group:ObjectDetection_1/ObjectDetection_1.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:ObjectDetection_2/ObjectDetection_2.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "TrackingMotion">
+      <FileRef
+         location = "group:CornorDetector/CornorDetector.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:/Users/miuki001/Work/opencv_practice/cornerHarris/CornerHarris.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:CornerSubPix/CornerSubPix.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:goodFeaturesToTrack_Demo/goodFeaturesToTrack_Demo.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:findContours/findContours.xcodeproj">
    </FileRef>
 </Workspace>

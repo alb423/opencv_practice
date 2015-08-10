@@ -4,15 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HelloCV.xcscheme</key>
+		<key>findContours.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>8</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>B26670F11B725E010066D6FC</key>
+		<key>B201DA3E1B78EFA1003DBFF0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

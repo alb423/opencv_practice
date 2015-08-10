@@ -457,6 +457,7 @@
 				B2A31D411B727B4F00B961A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
