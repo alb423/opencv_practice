@@ -61,6 +61,8 @@
 		B27D204D1B8F736A00A2DDA5 /* libopencv_hal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B27D20191B8F736A00A2DDA5 /* libopencv_hal.a */; };
 		B27D20561B8F82DB00A2DDA5 /* params_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B27D20551B8F82DB00A2DDA5 /* params_parser.cpp */; };
 		B27D20591B8F830600A2DDA5 /* inifile.c in Sources */ = {isa = PBXBuildFile; fileRef = B27D20581B8F830600A2DDA5 /* inifile.c */; };
+		B27D206D1B8F901F00A2DDA5 /* Fish-L.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = B27D1FE61B8F733300A2DDA5 /* Fish-L.jpg */; };
+		B27D206E1B8F901F00A2DDA5 /* Fish-R.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = B27D1FE71B8F733300A2DDA5 /* Fish-R.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +72,8 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				B27D206D1B8F901F00A2DDA5 /* Fish-L.jpg in CopyFiles */,
+				B27D206E1B8F901F00A2DDA5 /* Fish-R.jpg in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -138,6 +142,8 @@
 		B27D20551B8F82DB00A2DDA5 /* params_parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = params_parser.cpp; sourceTree = "<group>"; };
 		B27D20571B8F82F000A2DDA5 /* inifile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inifile.h; sourceTree = "<group>"; };
 		B27D20581B8F830600A2DDA5 /* inifile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inifile.c; sourceTree = "<group>"; };
+		B27D206B1B8F8CB000A2DDA5 /* Per-L.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = "Per-L.bmp"; sourceTree = "<group>"; };
+		B27D206C1B8F8CB000A2DDA5 /* Per-R.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = "Per-R.bmp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +246,8 @@
 				B27D1FE51B8F733300A2DDA5 /* EXAMPLE-p.ini */,
 				B27D1FE61B8F733300A2DDA5 /* Fish-L.jpg */,
 				B27D1FE71B8F733300A2DDA5 /* Fish-R.jpg */,
+				B27D206B1B8F8CB000A2DDA5 /* Per-L.bmp */,
+				B27D206C1B8F8CB000A2DDA5 /* Per-R.bmp */,
 			);
 			name = resource;
 			sourceTree = "<group>";
@@ -456,6 +464,7 @@
 		B27D1FDE1B8F72D400A2DDA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -474,6 +483,7 @@
 		B27D1FDF1B8F72D400A2DDA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
