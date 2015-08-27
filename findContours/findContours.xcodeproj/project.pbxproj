@@ -460,6 +460,7 @@
 				B201DA481B78EFA1003DBFF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
