@@ -10,6 +10,9 @@
       <FileRef
          location = "group:Hello_iOS_OpenCV/Hello_iOS_OpenCV.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:iOS_Calibration/iOS_Calibration.xcodeproj">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Calibration/Calibration.xcodeproj">

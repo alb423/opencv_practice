@@ -248,7 +248,7 @@ void stereo::stereoMatching(cv::InputArray _recImage1, cv::InputArray _recIamge2
     matcher->setP1(P1);
     matcher->setP2(P2);
     matcher->compute(img1, img2, dis);
-
+    
 	//StereoSGBM matcher(minDisparity, numDisparities, SADWindowSize, P1, P2);
 	//matcher(img1, img2, dis);
 	dis = dis / 16.0;

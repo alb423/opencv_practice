@@ -21,6 +21,12 @@
 using namespace cv;
 using namespace std;
 
+/*
+ Usage
+ $ ./calibration -w 9 -h 6 -o ./camera.yml -op -oe ./stereo_calib.xml (執行校正)
+ $ ./calibration -w 9 -h 6 -o ./camera.yml -op -oe ./stereo_calib.xml -su
+*/
+
 const char * usage =
 " \nexample command line for calibration from a live feed.\n"
 "   calibration  -w 4 -h 5 -s 0.025 -o camera.yml -op -oe\n"
@@ -325,6 +331,7 @@ int main( int argc, char** argv )
     vector<string> imageList;
     Pattern pattern = CHESSBOARD;
     
+    
     if( argc < 2 )
     {
         help();
@@ -440,6 +447,10 @@ int main( int argc, char** argv )
         printf( "%s", liveCaptureHelp );
     
     namedWindow( "Image View", 1 );
+    
+    // albert.liao modified start
+    namedWindow( "Undistort View", 1 );
+    // albert.liao modified end
     
     for(i = 0;;i++)
     {
@@ -567,6 +578,11 @@ int main( int argc, char** argv )
                                 getOptimalNewCameraMatrix(cameraMatrix, distCoeffs, imageSize, 1, imageSize, 0),
                                 imageSize, CV_16SC2, map1, map2);
         
+        string msg = "1000/1000";
+        int baseLine = 0;
+        Size textSize = getTextSize(msg, 1, 1, 1, &baseLine);
+        Point textOrigin(view.cols - 2*textSize.width - 10, view.rows - 2*baseLine - 10);
+
         for( i = 0; i < (int)imageList.size(); i++ )
         {
             view = imread(imageList[i], 1);
@@ -574,7 +590,15 @@ int main( int argc, char** argv )
                 continue;
             //undistort( view, rview, cameraMatrix, distCoeffs, cameraMatrix );
             remap(view, rview, map1, map2, INTER_LINEAR);
-            imshow("Image View", rview);
+            
+            // albert.liao modified start
+            msg = format( "%d/%d", (int)i, nframes );
+            putText( rview, msg, textOrigin, 1, 1,
+                    Scalar(255,0,0));
+            // albert.liao odified end
+            
+            imshow("Undistort View", rview);
+            
             int c = 0xff & waitKey();
             if( (c & 255) == 27 || c == 'q' || c == 'Q' )
                 break;

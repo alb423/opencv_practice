@@ -43,6 +43,8 @@ int main(int argc, char** argv)
     namedWindow( "DisImage", WINDOW_AUTOSIZE );
     
     stereo st(CameraType::CT_FISHEYE, RectifyType::RT_PESPECTIVE);
+    //stereo st(CameraType::CT_FISHEYE, RectifyType::RT_LONGITUDE_LATITUDE);
+    
     Mat R1,R2,P1,P2,Q;
     Mat img1 = imread(imgFile1);
     Mat img2 = imread(imgFile2);

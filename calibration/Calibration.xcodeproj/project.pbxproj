@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B21793911B9479E90032E3AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21793901B9479E90032E3AB /* Foundation.framework */; };
 		B27D1F501B8F621600A2DDA5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B27D1F4F1B8F621600A2DDA5 /* main.cpp */; };
 		B27D1F891B8F624B00A2DDA5 /* libopencv_videostab.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B27D1F561B8F624B00A2DDA5 /* libopencv_videostab.3.0.0.dylib */; };
 		B27D1F8A1B8F624B00A2DDA5 /* libopencv_videostab.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B27D1F571B8F624B00A2DDA5 /* libopencv_videostab.3.0.0.dylib */; };
@@ -73,6 +74,34 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B21793901B9479E90032E3AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B21793951B9485F00032E3AB /* left01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = left01.jpg; path = Calibration/left01.jpg; sourceTree = "<group>"; };
+		B21793961B9485F00032E3AB /* left02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = left02.jpg; path = Calibration/left02.jpg; sourceTree = "<group>"; };
+		B21793971B9485F00032E3AB /* left03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = left03.jpg; path = Calibration/left03.jpg; sourceTree = "<group>"; };
+		B21793981B9485F00032E3AB /* left04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = left04.jpg; path = Calibration/left04.jpg; sourceTree = "<group>"; };
+		B21793991B9485F00032E3AB /* left05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = left05.jpg; path = Calibration/left05.jpg; sourceTree = "<group>"; };
+		B217939A1B9485F00032E3AB /* left06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = left06.jpg; path = Calibration/left06.jpg; sourceTree = "<group>"; };
+		B217939B1B9485F00032E3AB /* left07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = left07.jpg; path = Calibration/left07.jpg; sourceTree = "<group>"; };
+		B217939C1B9485F00032E3AB /* left08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = left08.jpg; path = Calibration/left08.jpg; sourceTree = "<group>"; };
+		B217939D1B9485F00032E3AB /* left09.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = left09.jpg; path = Calibration/left09.jpg; sourceTree = "<group>"; };
+		B217939E1B9485F00032E3AB /* left11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = left11.jpg; path = Calibration/left11.jpg; sourceTree = "<group>"; };
+		B217939F1B9485F00032E3AB /* left12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = left12.jpg; path = Calibration/left12.jpg; sourceTree = "<group>"; };
+		B21793A01B9485F00032E3AB /* left13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = left13.jpg; path = Calibration/left13.jpg; sourceTree = "<group>"; };
+		B21793A11B9485F00032E3AB /* left14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = left14.jpg; path = Calibration/left14.jpg; sourceTree = "<group>"; };
+		B21793A21B9485F00032E3AB /* right01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = right01.jpg; path = Calibration/right01.jpg; sourceTree = "<group>"; };
+		B21793A31B9485F00032E3AB /* right02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = right02.jpg; path = Calibration/right02.jpg; sourceTree = "<group>"; };
+		B21793A41B9485F00032E3AB /* right03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = right03.jpg; path = Calibration/right03.jpg; sourceTree = "<group>"; };
+		B21793A51B9485F00032E3AB /* right04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = right04.jpg; path = Calibration/right04.jpg; sourceTree = "<group>"; };
+		B21793A61B9485F00032E3AB /* right05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = right05.jpg; path = Calibration/right05.jpg; sourceTree = "<group>"; };
+		B21793A71B9485F00032E3AB /* right06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = right06.jpg; path = Calibration/right06.jpg; sourceTree = "<group>"; };
+		B21793A81B9485F00032E3AB /* right07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = right07.jpg; path = Calibration/right07.jpg; sourceTree = "<group>"; };
+		B21793A91B9485F00032E3AB /* right08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = right08.jpg; path = Calibration/right08.jpg; sourceTree = "<group>"; };
+		B21793AA1B9485F00032E3AB /* right09.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = right09.jpg; path = Calibration/right09.jpg; sourceTree = "<group>"; };
+		B21793AB1B9485F00032E3AB /* right11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = right11.jpg; path = Calibration/right11.jpg; sourceTree = "<group>"; };
+		B21793AC1B9485F00032E3AB /* right12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = right12.jpg; path = Calibration/right12.jpg; sourceTree = "<group>"; };
+		B21793AD1B9485F00032E3AB /* right13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = right13.jpg; path = Calibration/right13.jpg; sourceTree = "<group>"; };
+		B21793AE1B9485F00032E3AB /* right14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = right14.jpg; path = Calibration/right14.jpg; sourceTree = "<group>"; };
+		B21793AF1B9485F00032E3AB /* stereo_calib.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = stereo_calib.xml; path = Calibration/stereo_calib.xml; sourceTree = "<group>"; };
 		B27D1F4C1B8F621600A2DDA5 /* Calibration */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Calibration; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27D1F4F1B8F621600A2DDA5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B27D1F561B8F624B00A2DDA5 /* libopencv_videostab.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.3.0.0.dylib; path = /usr/local/lib/libopencv_videostab.3.0.0.dylib; sourceTree = "<absolute>"; };
@@ -132,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21793911B9479E90032E3AB /* Foundation.framework in Frameworks */,
 				B27D1FB21B8F624B00A2DDA5 /* libopencv_video.3.0.0.dylib in Frameworks */,
 				B27D1F9B1B8F624B00A2DDA5 /* libopencv_imgproc.3.0.0.dylib in Frameworks */,
 				B27D1F911B8F624B00A2DDA5 /* libopencv_features2d.3.0.0.dylib in Frameworks */,
@@ -188,9 +218,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B21793711B9478AF0032E3AB /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+				B21793951B9485F00032E3AB /* left01.jpg */,
+				B21793961B9485F00032E3AB /* left02.jpg */,
+				B21793971B9485F00032E3AB /* left03.jpg */,
+				B21793981B9485F00032E3AB /* left04.jpg */,
+				B21793991B9485F00032E3AB /* left05.jpg */,
+				B217939A1B9485F00032E3AB /* left06.jpg */,
+				B217939B1B9485F00032E3AB /* left07.jpg */,
+				B217939C1B9485F00032E3AB /* left08.jpg */,
+				B217939D1B9485F00032E3AB /* left09.jpg */,
+				B217939E1B9485F00032E3AB /* left11.jpg */,
+				B217939F1B9485F00032E3AB /* left12.jpg */,
+				B21793A01B9485F00032E3AB /* left13.jpg */,
+				B21793A11B9485F00032E3AB /* left14.jpg */,
+				B21793A21B9485F00032E3AB /* right01.jpg */,
+				B21793A31B9485F00032E3AB /* right02.jpg */,
+				B21793A41B9485F00032E3AB /* right03.jpg */,
+				B21793A51B9485F00032E3AB /* right04.jpg */,
+				B21793A61B9485F00032E3AB /* right05.jpg */,
+				B21793A71B9485F00032E3AB /* right06.jpg */,
+				B21793A81B9485F00032E3AB /* right07.jpg */,
+				B21793A91B9485F00032E3AB /* right08.jpg */,
+				B21793AA1B9485F00032E3AB /* right09.jpg */,
+				B21793AB1B9485F00032E3AB /* right11.jpg */,
+				B21793AC1B9485F00032E3AB /* right12.jpg */,
+				B21793AD1B9485F00032E3AB /* right13.jpg */,
+				B21793AE1B9485F00032E3AB /* right14.jpg */,
+				B21793AF1B9485F00032E3AB /* stereo_calib.xml */,
+			);
+			name = Reference;
+			sourceTree = "<group>";
+		};
 		B27D1F431B8F621600A2DDA5 = {
 			isa = PBXGroup;
 			children = (
+				B21793901B9479E90032E3AB /* Foundation.framework */,
+				B21793711B9478AF0032E3AB /* Reference */,
 				B27D1F881B8F624B00A2DDA5 /* dylib */,
 				B27D1F4E1B8F621600A2DDA5 /* Calibration */,
 				B27D1F4D1B8F621600A2DDA5 /* Products */,
