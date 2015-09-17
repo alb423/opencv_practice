@@ -21,7 +21,6 @@ using namespace cv;
 }
 
 - (IBAction)actionStart:(id)sender;
-- (IBAction)showUndistortImage:(id)sender;
 
 @property (nonatomic, retain) CvVideoCamera* videoCamera;
 @end

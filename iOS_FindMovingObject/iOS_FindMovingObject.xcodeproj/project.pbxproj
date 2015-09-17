@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B20C2B2B1BA05E8B0010E494 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B20C2B2A1BA05E8B0010E494 /* main.m */; };
+		B20C2B2E1BA05E8B0010E494 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B20C2B2D1BA05E8B0010E494 /* AppDelegate.m */; };
+		B20C2B311BA05E8B0010E494 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B20C2B301BA05E8B0010E494 /* ViewController.mm */; };
+		B20C2B341BA05E8B0010E494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20C2B321BA05E8B0010E494 /* Main.storyboard */; };
+		B20C2B361BA05E8B0010E494 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20C2B351BA05E8B0010E494 /* Images.xcassets */; };
+		B20C2B391BA05E8B0010E494 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20C2B371BA05E8B0010E494 /* LaunchScreen.xib */; };
+		B20C2B501BA05F4C0010E494 /* FindMovingObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20C2B4E1BA05F4C0010E494 /* FindMovingObject.cpp */; };
+		B20C2B5D1BA060E30010E494 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20C2B511BA060E30010E494 /* Accelerate.framework */; };
+		B20C2B5E1BA060E30010E494 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20C2B521BA060E30010E494 /* AssetsLibrary.framework */; };
+		B20C2B5F1BA060E30010E494 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20C2B531BA060E30010E494 /* AVFoundation.framework */; };
+		B20C2B601BA060E30010E494 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20C2B541BA060E30010E494 /* CoreGraphics.framework */; };
+		B20C2B611BA060E30010E494 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20C2B551BA060E30010E494 /* CoreImage.framework */; };
+		B20C2B621BA060E30010E494 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20C2B561BA060E30010E494 /* CoreMedia.framework */; };
+		B20C2B631BA060E30010E494 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20C2B571BA060E30010E494 /* CoreVideo.framework */; };
+		B20C2B641BA060E30010E494 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20C2B581BA060E30010E494 /* Foundation.framework */; };
+		B20C2B651BA060E30010E494 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20C2B591BA060E30010E494 /* QuartzCore.framework */; };
+		B20C2B661BA060E30010E494 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20C2B5A1BA060E30010E494 /* UIKit.framework */; };
+		B20C2B671BA060E30010E494 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20C2B5B1BA060E30010E494 /* opencv2.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B20C2B251BA05E8B0010E494 /* iOS_FindMovingObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_FindMovingObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20C2B291BA05E8B0010E494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20C2B2A1BA05E8B0010E494 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B20C2B2C1BA05E8B0010E494 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B20C2B2D1BA05E8B0010E494 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B20C2B2F1BA05E8B0010E494 /* ViewController.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ViewController.hh; sourceTree = "<group>"; };
+		B20C2B301BA05E8B0010E494 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		B20C2B331BA05E8B0010E494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B20C2B351BA05E8B0010E494 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B20C2B381BA05E8B0010E494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B20C2B4E1BA05F4C0010E494 /* FindMovingObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FindMovingObject.cpp; sourceTree = "<group>"; };
+		B20C2B4F1BA05F4C0010E494 /* FindMovingObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindMovingObject.h; sourceTree = "<group>"; };
+		B20C2B511BA060E30010E494 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		B20C2B521BA060E30010E494 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = "<absolute>"; };
+		B20C2B531BA060E30010E494 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = "<absolute>"; };
+		B20C2B541BA060E30010E494 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = "<absolute>"; };
+		B20C2B551BA060E30010E494 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = "<absolute>"; };
+		B20C2B561BA060E30010E494 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = "<absolute>"; };
+		B20C2B571BA060E30010E494 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		B20C2B581BA060E30010E494 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		B20C2B591BA060E30010E494 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		B20C2B5A1BA060E30010E494 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = "<absolute>"; };
+		B20C2B5B1BA060E30010E494 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../opencv_ios/ios/opencv2.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B20C2B221BA05E8B0010E494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20C2B631BA060E30010E494 /* CoreVideo.framework in Frameworks */,
+				B20C2B621BA060E30010E494 /* CoreMedia.framework in Frameworks */,
+				B20C2B601BA060E30010E494 /* CoreGraphics.framework in Frameworks */,
+				B20C2B5D1BA060E30010E494 /* Accelerate.framework in Frameworks */,
+				B20C2B611BA060E30010E494 /* CoreImage.framework in Frameworks */,
+				B20C2B5E1BA060E30010E494 /* AssetsLibrary.framework in Frameworks */,
+				B20C2B5F1BA060E30010E494 /* AVFoundation.framework in Frameworks */,
+				B20C2B641BA060E30010E494 /* Foundation.framework in Frameworks */,
+				B20C2B651BA060E30010E494 /* QuartzCore.framework in Frameworks */,
+				B20C2B661BA060E30010E494 /* UIKit.framework in Frameworks */,
+				B20C2B671BA060E30010E494 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B20C2B1C1BA05E8B0010E494 = {
+			isa = PBXGroup;
+			children = (
+				B20C2B5C1BA060E30010E494 /* FrameWork */,
+				B20C2B271BA05E8B0010E494 /* iOS_FindMovingObject */,
+				B20C2B261BA05E8B0010E494 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B20C2B261BA05E8B0010E494 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B20C2B251BA05E8B0010E494 /* iOS_FindMovingObject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B20C2B271BA05E8B0010E494 /* iOS_FindMovingObject */ = {
+			isa = PBXGroup;
+			children = (
+				B20C2B2C1BA05E8B0010E494 /* AppDelegate.h */,
+				B20C2B2D1BA05E8B0010E494 /* AppDelegate.m */,
+				B20C2B2F1BA05E8B0010E494 /* ViewController.hh */,
+				B20C2B301BA05E8B0010E494 /* ViewController.mm */,
+				B20C2B4E1BA05F4C0010E494 /* FindMovingObject.cpp */,
+				B20C2B4F1BA05F4C0010E494 /* FindMovingObject.h */,
+				B20C2B321BA05E8B0010E494 /* Main.storyboard */,
+				B20C2B351BA05E8B0010E494 /* Images.xcassets */,
+				B20C2B371BA05E8B0010E494 /* LaunchScreen.xib */,
+				B20C2B281BA05E8B0010E494 /* Supporting Files */,
+			);
+			path = iOS_FindMovingObject;
+			sourceTree = "<group>";
+		};
+		B20C2B281BA05E8B0010E494 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B20C2B291BA05E8B0010E494 /* Info.plist */,
+				B20C2B2A1BA05E8B0010E494 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B20C2B5C1BA060E30010E494 /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				B20C2B511BA060E30010E494 /* Accelerate.framework */,
+				B20C2B521BA060E30010E494 /* AssetsLibrary.framework */,
+				B20C2B531BA060E30010E494 /* AVFoundation.framework */,
+				B20C2B541BA060E30010E494 /* CoreGraphics.framework */,
+				B20C2B551BA060E30010E494 /* CoreImage.framework */,
+				B20C2B561BA060E30010E494 /* CoreMedia.framework */,
+				B20C2B571BA060E30010E494 /* CoreVideo.framework */,
+				B20C2B581BA060E30010E494 /* Foundation.framework */,
+				B20C2B591BA060E30010E494 /* QuartzCore.framework */,
+				B20C2B5A1BA060E30010E494 /* UIKit.framework */,
+				B20C2B5B1BA060E30010E494 /* opencv2.framework */,
+			);
+			name = FrameWork;
+			path = /Users/miuki001/Work/opencv_practice/iOS_Calibration/../Hello_iOS_OpenCV;
+			sourceTree = "<absolute>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B20C2B241BA05E8B0010E494 /* iOS_FindMovingObject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20C2B481BA05E8B0010E494 /* Build configuration list for PBXNativeTarget "iOS_FindMovingObject" */;
+			buildPhases = (
+				B20C2B211BA05E8B0010E494 /* Sources */,
+				B20C2B221BA05E8B0010E494 /* Frameworks */,
+				B20C2B231BA05E8B0010E494 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOS_FindMovingObject;
+			productName = iOS_FindMovingObject;
+			productReference = B20C2B251BA05E8B0010E494 /* iOS_FindMovingObject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B20C2B1D1BA05E8B0010E494 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = albert;
+				TargetAttributes = {
+					B20C2B241BA05E8B0010E494 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = B20C2B201BA05E8B0010E494 /* Build configuration list for PBXProject "iOS_FindMovingObject" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B20C2B1C1BA05E8B0010E494;
+			productRefGroup = B20C2B261BA05E8B0010E494 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B20C2B241BA05E8B0010E494 /* iOS_FindMovingObject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B20C2B231BA05E8B0010E494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20C2B341BA05E8B0010E494 /* Main.storyboard in Resources */,
+				B20C2B391BA05E8B0010E494 /* LaunchScreen.xib in Resources */,
+				B20C2B361BA05E8B0010E494 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B20C2B211BA05E8B0010E494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20C2B311BA05E8B0010E494 /* ViewController.mm in Sources */,
+				B20C2B501BA05F4C0010E494 /* FindMovingObject.cpp in Sources */,
+				B20C2B2E1BA05E8B0010E494 /* AppDelegate.m in Sources */,
+				B20C2B2B1BA05E8B0010E494 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B20C2B321BA05E8B0010E494 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20C2B331BA05E8B0010E494 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B20C2B371BA05E8B0010E494 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20C2B381BA05E8B0010E494 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B20C2B461BA05E8B0010E494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B20C2B471BA05E8B0010E494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B20C2B491BA05E8B0010E494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/miuki001/Work/opencv_ios/ios,
+				);
+				INFOPLIST_FILE = iOS_FindMovingObject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B20C2B4A1BA05E8B0010E494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/miuki001/Work/opencv_ios/ios,
+				);
+				INFOPLIST_FILE = iOS_FindMovingObject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B20C2B201BA05E8B0010E494 /* Build configuration list for PBXProject "iOS_FindMovingObject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20C2B461BA05E8B0010E494 /* Debug */,
+				B20C2B471BA05E8B0010E494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20C2B481BA05E8B0010E494 /* Build configuration list for PBXNativeTarget "iOS_FindMovingObject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20C2B491BA05E8B0010E494 /* Debug */,
+				B20C2B4A1BA05E8B0010E494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B20C2B1D1BA05E8B0010E494 /* Project object */;
+}

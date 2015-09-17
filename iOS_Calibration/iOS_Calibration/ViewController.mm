@@ -84,7 +84,7 @@ extern void my_undistort_image(Mat &view, Mat &undistortView);
 
 - (void)processImage:(cv::Mat&)image;
 {
-    static int mode = 0, counter=0;
+    static int mode = 0;
     cv::Mat image_copy = image.clone();
     cv::Mat image_undistorted;
     

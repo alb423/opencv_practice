@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "container:"
+      name = "fisheye">
+      <FileRef
+         location = "group:fisheye_paronoma_1/fisheye_paronoma_1.xcodeproj">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:stereo_matching/stereo_matching.xcodeproj">
    </FileRef>
    <Group
       location = "container:"
       name = "iOS_Test">
+      <FileRef
+         location = "group:iOS_FindMovingObject/iOS_FindMovingObject.xcodeproj">
+      </FileRef>
       <FileRef
          location = "group:Hello_iOS_OpenCV/Hello_iOS_OpenCV.xcodeproj">
       </FileRef>

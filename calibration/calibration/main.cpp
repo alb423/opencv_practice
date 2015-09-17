@@ -21,6 +21,9 @@
 using namespace cv;
 using namespace std;
 
+#define CAMERA_MODEL_PINHOLE 1
+#define CAMERA_MODEL_FISHEYE 2
+#define CAMERA_MODEL CAMERA_MODEL_FISHEYE
 /*
  Usage
  $ ./calibration -w 9 -h 6 -o ./camera.yml -op -oe ./stereo_calib.xml (執行校正)
@@ -166,8 +169,29 @@ static bool runCalibration( vector<vector<Point2f> > imagePoints,
     
     objectPoints.resize(imagePoints.size(),objectPoints[0]);
     
+#if CAMERA_MODEL == CAMERA_MODEL_PINHOLE
     double rms = calibrateCamera(objectPoints, imagePoints, imageSize, cameraMatrix,
                                  distCoeffs, rvecs, tvecs, flags|CALIB_FIX_K4|CALIB_FIX_K5);
+#else
+    int flag = 0;
+    flag |= cv::fisheye::CALIB_RECOMPUTE_EXTRINSIC;
+    flag |= cv::fisheye::CALIB_CHECK_COND;
+    flag |= cv::fisheye::CALIB_FIX_SKEW;
+    
+    // below 4 flags should be omit
+//    flag |= cv::fisheye::CALIB_FIX_K1;
+//    flag |= cv::fisheye::CALIB_FIX_K2;
+//    flag |= cv::fisheye::CALIB_FIX_K3;
+//    flag |= cv::fisheye::CALIB_FIX_K4;
+    
+    cv::Matx33d K;
+    cv::Vec4d D;
+    
+    // TODO: check where to use D
+    double rms = cv::fisheye::calibrate(objectPoints, imagePoints, imageSize, K,
+                                        D, rvecs, tvecs, flag, cv::TermCriteria(3, 20, 1e-6));
+#endif
+    
     ///*|CALIB_FIX_K3*/|CALIB_FIX_K4|CALIB_FIX_K5);
     printf("RMS error reported by calibrateCamera: %g\n", rms);
     
@@ -574,9 +598,25 @@ int main( int argc, char** argv )
     if( !capture.isOpened() && showUndistorted )
     {
         Mat view, rview, map1, map2;
+        
+#if CAMERA_MODEL == CAMERA_MODEL_PINHOLE
         initUndistortRectifyMap(cameraMatrix, distCoeffs, Mat(),
                                 getOptimalNewCameraMatrix(cameraMatrix, distCoeffs, imageSize, 1, imageSize, 0),
                                 imageSize, CV_16SC2, map1, map2);
+#else
+//        cv::Matx33d newK = Mat();
+//        double balance = 1.0;
+//        cv::fisheye::estimateNewCameraMatrixForUndistortRectify(Mat(),
+//                                                                getOptimalNewCameraMatrix(cameraMatrix, distCoeffs, imageSize, 1, imageSize, 0),
+//                                                                imageSize, cv::noArray(), newK, balance);
+//        cv::fisheye::initUndistortRectifyMap(cameraMatrix, distCoeffs, Mat(),
+//                                             newK,
+//                                             imageSize, CV_16SC2, map1, map2);
+        
+        cv::fisheye::initUndistortRectifyMap(cameraMatrix, distCoeffs, Mat(),
+                                             getOptimalNewCameraMatrix(cameraMatrix, distCoeffs, imageSize, 1, imageSize, 0),
+                                             imageSize, CV_16SC2, map1, map2);
+#endif
         
         string msg = "1000/1000";
         int baseLine = 0;
@@ -588,10 +628,15 @@ int main( int argc, char** argv )
             view = imread(imageList[i], 1);
             if(view.empty())
                 continue;
+            
+           // albert.liao modified start
+            
+#if CAMERA_MODEL == CAMERA_MODEL_PINHOLE
             //undistort( view, rview, cameraMatrix, distCoeffs, cameraMatrix );
             remap(view, rview, map1, map2, INTER_LINEAR);
-            
-            // albert.liao modified start
+#else
+            remap(view, rview, map1, map2, INTER_LINEAR, BORDER_CONSTANT);
+#endif
             msg = format( "%d/%d", (int)i, nframes );
             putText( rview, msg, textOrigin, 1, 1,
                     Scalar(255,0,0));

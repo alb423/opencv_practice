@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ux-5z-hjf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="459"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugO-HO-HL7">
+                                <rect key="frame" x="262" y="539" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionStart:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="G6P-UB-foQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ugO-HO-HL7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="262" id="5Ff-Kz-bS1"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ugO-HO-HL7" secondAttribute="bottom" constant="31" id="6t8-bb-fdG"/>
+                            <constraint firstItem="3Ux-5z-hjf" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="E5x-xL-Bpu"/>
+                            <constraint firstItem="ugO-HO-HL7" firstAttribute="top" secondItem="3Ux-5z-hjf" secondAttribute="bottom" constant="80" id="U4s-Qf-l2y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Ux-5z-hjf" secondAttribute="trailing" id="im8-NS-bpT"/>
+                            <constraint firstItem="3Ux-5z-hjf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="nzh-ks-x1n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="ugO-HO-HL7" id="goO-bi-VVA"/>
+                        <outlet property="imageView" destination="3Ux-5z-hjf" id="Jxh-2q-wtF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469" y="52"/>
+        </scene>
+    </scenes>
+</document>

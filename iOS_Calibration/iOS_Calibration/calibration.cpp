@@ -446,7 +446,7 @@ void my_undistort_image(Mat &view, Mat &undistortView)
 {
     Mat map1, map2;
 
-#if 1
+#if 0
     undistort( view, undistortView, cameraMatrix, distCoeffs, cameraMatrix );
 #else
     initUndistortRectifyMap(cameraMatrix, distCoeffs, Mat(),
