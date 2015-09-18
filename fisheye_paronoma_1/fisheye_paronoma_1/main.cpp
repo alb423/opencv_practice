@@ -15,8 +15,11 @@
 using namespace cv;
 using namespace std;
 
+#define RENDER_PARONOMA 1
+#define RENDER_DOUBLE_PARONOMA 2
+#define RENDER_METHOD RENDER_DOUBLE_PARONOMA
 // globals
-cv::Mat src, temp, dst;
+cv::Mat src, temp, dst, doubleParonoma;
 cv::Mat map_x, map_y;
 #define REMAP_WINDOW "Remap Test"
 
@@ -26,8 +29,8 @@ int main(int argc, char** argv) {
     
     // load image
     //src = imread(argv[1], 1);
-    src = cv::imread("/Users/miuki001/Work/opencv_practice/fisheye_paronoma_1/fisheye_paronoma_1/lillestromfisheye_small.jpg", 1);
-    //src = cv::imread("/Users/liaokuohsun/Work/opencv_practice/fisheye_paronoma_1/fisheye_paronoma_1/lillestromfisheye_small.jpg", 1);
+    //src = cv::imread("/Users/miuki001/Work/opencv_practice/fisheye_paronoma_1/fisheye_paronoma_1/lillestromfisheye_small.jpg", 1);
+    src = cv::imread("/Users/liaokuohsun/Work/opencv_practice/fisheye_paronoma_1/fisheye_paronoma_1/lillestromfisheye_small.jpg", 1);
     
     int Ws, Hs, Wd, Hd, R1, R2, Cx, Cy;
     Cx=src.cols/2;
@@ -45,6 +48,7 @@ int main(int argc, char** argv) {
     
     // create destination and the maps
     dst.create(Hd, Wd, src.type());
+    doubleParonoma.create(Hd*2, Wd/2, src.type());
     
     cv::imshow(REMAP_WINDOW, dst);
     
@@ -60,18 +64,43 @@ int main(int argc, char** argv) {
     //cv::resize(temp, dst, dSize);
     //cv::resizeWindow(REMAP_WINDOW, temp.cols/4, temp.rows/4);
     
-    cv::flip(temp, temp, 0);
-    imshow(REMAP_WINDOW, temp);
+    cv::flip(temp, dst, 0);
+    imshow(REMAP_WINDOW, dst);
     
-    int key = 0, OffsetX = 10;
+    int key = 0, OffsetX = 0;
     while ((key = waitKey()) != 27) {
         if(key == '1')
         {
-            shift(temp, dst, Point(OffsetX,0), BORDER_WRAP);
+            OffsetX +=8;
+#if RENDER_METHOD == RENDER_PARONOMA
+            shift(dst, dst, Point(OffsetX,0), BORDER_WRAP);
             imshow(REMAP_WINDOW, dst);
-            OffsetX +=10;
+#else
+            shift(dst, dst, Point(OffsetX,0), BORDER_WRAP);
+            cv::Mat upper = dst(cv::Rect(0,0,Wd/2,Hd));
+            cv::Mat down = dst(cv::Rect(Wd/2,0,Wd/2,Hd));
+            upper.copyTo(doubleParonoma(cv::Rect(0,0,Wd/2,Hd)));
+            down.copyTo(doubleParonoma(cv::Rect(0,Hd,Wd/2,Hd)));
+            imshow(REMAP_WINDOW, doubleParonoma);
+#endif
+            
         }
-        if(key == 'q')
+        else if(key == '2')
+        {
+            OffsetX -=8;
+#if RENDER_METHOD == RENDER_PARONOMA
+            shift(dst, dst, Point(OffsetX,0), BORDER_WRAP);
+            imshow(REMAP_WINDOW, dst);
+#else
+            shift(dst, dst, Point(OffsetX,0), BORDER_WRAP);
+            cv::Mat upper = dst(cv::Rect(0,0,Wd/2,Hd));
+            cv::Mat down = dst(cv::Rect(Wd/2,0,Wd/2,Hd));
+            upper.copyTo(doubleParonoma(cv::Rect(0,0,Wd/2,Hd)));
+            down.copyTo(doubleParonoma(cv::Rect(0,Hd,Wd/2,Hd)));
+            imshow(REMAP_WINDOW, doubleParonoma);
+#endif
+        }
+        else if(key == 'q')
             break;
         // just wait
     }
