@@ -71,7 +71,7 @@ int main(int argc, char** argv) {
     while ((key = waitKey()) != 27) {
         if(key == '1')
         {
-            OffsetX +=8;
+            OffsetX =8;
 #if RENDER_METHOD == RENDER_PARONOMA
             shift(dst, dst, Point(OffsetX,0), BORDER_WRAP);
             imshow(REMAP_WINDOW, dst);
@@ -87,7 +87,7 @@ int main(int argc, char** argv) {
         }
         else if(key == '2')
         {
-            OffsetX -=8;
+            OffsetX = -8;
 #if RENDER_METHOD == RENDER_PARONOMA
             shift(dst, dst, Point(OffsetX,0), BORDER_WRAP);
             imshow(REMAP_WINDOW, dst);
