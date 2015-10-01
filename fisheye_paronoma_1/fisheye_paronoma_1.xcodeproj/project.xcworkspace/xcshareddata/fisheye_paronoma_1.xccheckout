@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>590E2550-DDD1-4C7F-A4D7-FED58F66C2A2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>fisheye_paronoma_1</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>13C6F9CEAF4F3F99C4DE7CE134FF18C2B1C3FD32</key>
+		<string>https://github.com/alb423/opencv_practice.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>fisheye_paronoma_1/fisheye_paronoma_1.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>13C6F9CEAF4F3F99C4DE7CE134FF18C2B1C3FD32</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/alb423/opencv_practice.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>13C6F9CEAF4F3F99C4DE7CE134FF18C2B1C3FD32</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>13C6F9CEAF4F3F99C4DE7CE134FF18C2B1C3FD32</string>
+			<key>IDESourceControlWCCName</key>
+			<string>opencv_practice</string>
+		</dict>
+	</array>
+</dict>
+</plist>
